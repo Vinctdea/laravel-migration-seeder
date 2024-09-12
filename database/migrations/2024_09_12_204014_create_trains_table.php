@@ -14,13 +14,13 @@ return new class extends Migration
         Schema::create('trains', function (Blueprint $table) {
             $table->id();
             $table->string('Azienda', 50);
-            $table->string('Stazione Partenza', 50);
-            $table->string('Stazione Arrivo', 50);
-            $table->string('Orario Partenza', 50);
-            $table->string('Orario Arrivo', 50);
-            $table->tinyInteger('Codice Treno');
-            $table->tinyInteger('Numero Carrozze')->nullable();
-            $table->boolean('In Orario');
+            $table->string('StazionePartenza', 50);
+            $table->string('StazioneArrivo', 50);
+            $table->string('OrarioPartenza', 50);
+            $table->string('OrarioArrivo', 50);
+            $table->tinyInteger('CodiceTreno');
+            $table->tinyInteger('NumeroCarrozze')->nullable();
+            $table->boolean('InOrario');
             $table->boolean('Cancellato');
             $table->timestamps();
         });

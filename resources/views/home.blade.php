@@ -14,19 +14,31 @@
     <table class="table">
         <thead>
             <tr>
-                <th scope="col">#</th>
-                <th scope="col">First</th>
-                <th scope="col">Last</th>
-                <th scope="col">Handle</th>
+                <th scope="col">azienda</th>
+                <th scope="col">numero treno</th>
+                <th scope="col">stazione di partenza</th>
+                <th scope="col">stazione di arrivo</th>
+                <th scope="col">orario partenza</th>
+                <th scope="col">orario arrivo</th>
+                <th scope="col">cancellato</th>
+
+
+
             </tr>
         </thead>
         <tbody>
-            <tr>
-                <th scope="row">1</th>
-                <td>Mark</td>
-                <td>Otto</td>
-                <td>@mdo</td>
-            </tr>
+
+            @foreach ($trains as $train)
+                <tr>
+                    <th>{{ $train->Azienda }}</th>
+                    <th>{{ $train->CodiceTreno }}</th>
+                    <th>{{ $train->StazionePartenza }}</th>
+                    <th>{{ $train->StazioneArrivo }}</th>
+                    <th>{{ $train->OrarioPartenza }}</th>
+                    <th>{{ $train->OrarioArrivo }}</th>
+                    <th>{{ $train->Cancellato }}</th>
+                </tr>
+            @endforeach
 
         </tbody>
     </table>
