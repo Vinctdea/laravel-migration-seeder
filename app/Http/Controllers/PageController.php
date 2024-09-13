@@ -19,4 +19,10 @@ class PageController extends Controller
 
         return view('trains', compact('trains'));
     }
+
+    public function travels()
+    {
+
+        return view('travels');
+    }
 }

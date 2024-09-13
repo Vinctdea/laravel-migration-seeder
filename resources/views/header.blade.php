@@ -30,7 +30,7 @@
                                 <a class="nav-link active" aria-current="page" href="{{ route('trains') }}">treni</a>
                             </li>
                             <li class="nav-item">
-                                <a class="nav-link" href="#">Viaggi</a>
+                                <a class="nav-link" href="{{ route('travels') }}">Viaggi</a>
                             </li>
 
                         </ul>
