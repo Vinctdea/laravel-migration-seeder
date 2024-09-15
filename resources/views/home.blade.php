@@ -1,7 +1,3 @@
 @include('header')
 
-
-
-</body>
-
-</html>
+<h3>home</h3>
